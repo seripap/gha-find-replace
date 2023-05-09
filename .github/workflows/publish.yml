@@ -4,7 +4,7 @@ on:
     types: [published]
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: buildjet-2vcpu-ubuntu-2204-arm
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     steps:
@@ -15,7 +15,7 @@ jobs:
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
-          name: jacobtomlinson/gha-find-replace
+          name: seripap/gha-find-replace
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: ghcr.io
