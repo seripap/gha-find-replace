@@ -1,5 +1,5 @@
-name: "Find and Replace"
-description: "Find and replace a string in your project files"
+name: "Find and Replace ARM64"
+description: "Find and replace a string in your project files using ARM64"
 author: "Jacob Tomlinson"
 inputs:
   include:
